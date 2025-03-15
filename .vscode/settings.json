@@ -1,0 +1,29 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPath": "/home/gtc/esp/v5.4/esp-idf",
+    "idf.pythonInstallPath": "/usr/bin/python3",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.port": "/dev/ttyUSB0",
+    "idf.toolsPath": "/home/gtc/.espressif",
+    "idf.customExtraVars": {
+        "IDF_TARGET": "esp32s3"
+    },
+    "idf.flashType": "UART",
+    "files.associations": {
+        "atomic": "cpp",
+        "*.tcc": "cpp",
+        "cstddef": "cpp",
+        "functional": "cpp",
+        "memory_resource": "cpp",
+        "fstream": "cpp",
+        "span": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "compare": "cpp",
+        "cstdint": "cpp",
+        "format": "cpp",
+        "random": "cpp"
+    }
+}
