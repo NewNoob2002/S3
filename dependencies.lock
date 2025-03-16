@@ -437,9 +437,17 @@ dependencies:
       registry_url: https://components.espressif.com
       type: service
     version: 1.18.1
+  lvgl/lvgl:
+    component_hash: 096c69af22eaf8a2b721e3913da91918c5e6bf1a762a113ec01f401aa61337a0
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 9.2.2
 direct_dependencies:
 - espressif/arduino-esp32
 - idf
-manifest_hash: 1904c09017a0c3c1742cc33abaf834f315492432d6f4c6452667fd4a93d4e584
+- lvgl/lvgl
+manifest_hash: 9e11f968a970daa8e49b223943744088b30a9cf0c198573463d9477ac0f5c67a
 target: esp32s3
 version: 2.0.0
