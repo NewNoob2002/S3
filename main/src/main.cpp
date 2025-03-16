@@ -5,16 +5,19 @@
 
 extern "C" void app_main()
 {
-    spi_master_init(lcd_mosi, lcd_clk, lcd_cs, lcd_dc, lcd_rst, lcd_blk);
-    lcd_init(172, 320, 35, 0);
-    static int i = 0;
+    Begin_lcd();
+    printf("framebuffer %d\n", lcd_config._use_frame_buffer);
     while (1)
     {
-
-        if(i == 4095) i = 0;
-        lcd_setBacklight(i++);
-        printf("Backlight: %d\n", i);
-        delay(10);
+        lcdFillScreen(RED);
+        lcdDrawFinish();
+        delay(1000);
+        lcdFillScreen(GREEN);
+        lcdDrawFinish();
+        delay(1000);
+        lcdFillScreen(BLUE);
+        lcdDrawFinish();
+        delay(1000);
     }
     return;
     // Do your own thing

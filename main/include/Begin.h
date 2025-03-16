@@ -9,4 +9,4 @@
 #include "SPI.h"
 
 extern SPIClass lcd;
-void spi_init();
+void Begin_lcd();
